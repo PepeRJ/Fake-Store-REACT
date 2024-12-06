@@ -1,51 +1,33 @@
-# React + TypeScript + Vite
+Tienda Web con React y Vite
+Descripción
+Aplicación web de tienda de productos desarrollada con React y Vite. Utiliza Tailwind CSS para un diseño moderno y Fake Store API para obtener productos de manera dinámica.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Características
+Interfaz Intuitiva para navegar entre secciones.
+Hook Personalizado para manejar solicitudes a la Fake Store API.
+Contexto para centralizar la lógica de fetching.
+Rutas Dinámicas con react-router-dom para acceder a productos y detalles.
+Manejo de Errores e indicadores de carga (spinners).
+Tecnologías Utilizadas
+React
+Vite
+Tailwind CSS
+React Router
+Fake Store API
+Instalación y Uso
+Clona el repositorio:
 
-Currently, two official plugins are available:
+bash
+Copy
+git clone https://github.com/tuusuario/turepo.git
+cd turepo
+Instala las dependencias:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copy
+npm install
+Inicia la aplicación:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# Fake-Store-REACT
+bash
+Copy
+npm run dev
